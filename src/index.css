@@ -117,7 +117,8 @@ p{
     /* display: flex;
     justify-content: space-around; */
     display: grid;
-    grid-template-columns: 500px 500px 400px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
 }
 
 .divi{
@@ -193,4 +194,103 @@ p{
     border: 1px solid darkcyan;
     margin-left: 42%;
     margin-top: 11px;
+}
+
+
+
+@media (max-width:528px){
+
+    *{
+        box-sizing: border-box;
+    }
+
+    .Header{
+        display: block ;
+        width: 100% ;
+    }
+.logo{
+    width: 100% ;
+    display: block ;
+   
+    
+}
+
+.logo h1{
+    text-align: center ;
+    padding: 0px;
+    text-align: center;
+    
+}
+
+.navbar{
+    padding-left: 9px;
+}
+.Header .navbar {
+    display: block;
+    width: 100%;
+    position: relative;
+
+}
+
+.Header .navbar .tools{
+    padding: 30px;
+}
+
+.section{
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    height: 70vh;
+    width: 100%;
+    margin-top: 7%;
+}
+
+.right{
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    box-sizing: border-box;
+    height: auto;
+}
+
+.right img{
+    width: 90%;
+    margin: 4%;
+    border-radius: 5px;
+    
+    
+}
+
+.left{
+    position: absolute;
+    
+    width: 100%;
+    position: absolute;
+    top: 480px;
+    height: auto;
+}
+
+.left .text1 {
+    width: 100%;
+    margin-top: 2%;
+    font-size: 40px;
+    text-align: center;
+    padding-left: 0px;
+   
+}
+
+.btn{
+    margin-left: 40%;
+}
+
+
+
+/* @media (min-width: 520px) and (max-width:767) {
+    .navbar{
+        margin-left: 5%;
+    }
+} */
+
+  
 }
